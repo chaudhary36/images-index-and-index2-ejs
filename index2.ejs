@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome! to Jovial Divine Scholars - Representing the new era !</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@500&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+       
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+       
+        
+
+       
+        .topbar {
+            height: 6vh;
+            background: #2b0b0b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar {
+          background: white;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            height: min-content;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+            position: relative;
+            z-index: 3;
+        }
+
+        .nav-links {
+            /* margin: 23px; */
+            padding: 16px;
+            display: flex;
+            text-align: center;
+            gap: 23px;
+            margin-right: 43px;
+
+            
+        }
+        .nav-links li a{
+            padding: 5px;
+            border-radius: 10px;
+        }
+       .nav-links li a:hover{
+            padding: 5px;
+            border-radius: 10px;
+            background: #2b0b0b;
+            color: white;
+            transition: 0.2s all ease-in-out;
+       }
+        a {
+            color: black;
+
+        }
+
+        .logo {
+            display: flex;
+            /* margin-left: 55px; */
+            font-size: 23px;
+            font-weight: bolder;
+            margin-left: 43px;
+        }
+
+        .logoimg {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            margin-top: 2px;
+        }
+
+        .l-top {
+            margin-top: 12px;
+            margin-left: 12px;
+        }
+
+        .action {
+            border: 2px solid black;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+       
+
+
+
+
+
+ .ctrl-ge{
+    box-sizing: content-box;
+    height: 80%;
+ }
+        
+       
+     
+      
+     .locate{
+        position: relative;
+        left: 7%;
+        /* top: 25%; */
+        display: flex;
+        gap: 10px;
+     }
+  
+     .lct{
+        color: rgb(218, 218, 218);
+     }
+
+     .info{
+        /* gap: 10px; */
+        margin-right: 25px;
+     }
+     .info-custom{
+        color: white;
+        margin: 14px;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 8px;
+        padding: 3px 10px;
+     }
+     .info-custom2{
+        color: white;
+        margin: 14px;
+        text-align: center;
+        border-radius: 8px;
+        padding: 3px 10px;
+     }
+     .info-custom:hover{
+        opacity: 80%;
+     }
+     .centerr{
+      display: flex;
+      justify-content: center;
+      /* text-align: center; */
+      /* margin: 30px auto; */
+      /* margin-bottom: 30px; */
+     }
+     .main-c{
+      height: 60vh;
+      width: 100%;
+      background: rgba(128, 128, 128, 0.562);
+     }
+
+     .c-img-slide{
+      height: 78vh;
+     }
+     .slide-image{
+      background-image: url("/images/newjds hai.png");
+      background-size: cover;
+      height: 78vh;
+      background-position: top;
+      border-bottom: 2px solid black;
+
+
+     }
+     .slide-image:hover{
+      transform: translate(2);
+      shape-outside: margin-box;
+     }
+     .first-text{
+      /* display: inline-block; */
+      position: relative;
+      top: 55%;
+      color: rgb(255, 255, 255);
+      /* display: flex; */
+      align-self: center;
+      font-size: 35px;
+      font-weight: bolder;
+         }
+         .second-text{
+          position: relative;
+      top: 55%;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+         }
+         
+         /* Footer CSS */
+        
+         footer{
+    /* margin-top: 23px; */
+    height: min-content;
+    background: #2b0b0b
+}
+.container2{
+    position: relative;
+    z-index: 40;
+    
+}
+.container-content{
+    padding-top: 10px;
+    display: flex;
+}
+.left-side{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 4px;
+    width: 100%;
+    justify-content: center;
+}
+.left-side-items{
+    cursor: pointer;
+    list-style-type: circle black;
+    margin: 6px ;
+    color: whitesmoke;
+
+}
+
+
+
+.footer-text{
+    color: whitesmoke;
+    text-align: center;
+}
+.footer-add{
+    color: whitesmoke;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.left-side-items .mid-side-items .right-side-items:hover{
+    color: #140F2D;
+}
+.info-custom2{
+        color: white;
+        margin: 14px;
+        text-align: center;
+        border-radius: 8px;
+        padding: 3px 10px;
+     }
+
+
+
+
+        .content-header{
+            position: relative;
+            top: 35%;
+            left: 2%;
+            height: 20vh;
+            width: 70%;
+        }
+        .btn-admit{
+            border: 2px solid white;
+            padding: 10px;
+            position: relative;
+            top: 19px;
+            border-radius: 7px;
+            background: #2b0b0b;
+            color: white;
+        }
+        .btn-admit:hover{
+          border: 1px solid white;
+            padding: 10px;
+            position: relative;
+            top: 19px;
+            border-radius: 7px;
+            background: #2b0b0b;
+            color: white;
+            transition: all 0.7s ease-in-out;
+        }
+        
+
+
+
+        .slider {
+    width: 100%;
+    height: 510px;
+    position: relative;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transition: all 0.5s ease-in-out; */
+  }
+
+  .slider img:first-child {
+    z-index: 1;
+  }
+
+  .slider img:nth-child(2) {
+    z-index: 0;
+  }
+
+  .navigation-button {
+    text-align: center;
+    position: relative;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  .text-jds{
+    font-size: 23px;
+    font-weight: bold;
+    margin: 23px 23px 0px 23px;
+  }
+  .about-jds{
+    font-weight: bold;
+    margin: 23px;
+    display: flex;
+  }
+  .container-about{
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+  }
+      .read-more{
+        padding: 09px;
+        position: relative;
+        top: 10%;
+        border: 2px;
+        border-radius: 10px;
+        background: #2b0b0b;
+        color: white;
+      }
+      .read{
+        margin-left: 18px;
+      }
+
+      .cont{
+        display: flex;
+      }
+
+      .messages{
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #140F2D;
+
+      }
+
+      
+
+      .bg-1{
+        background-color: rgb(158, 93, 9);
+      }
+      .bg-2{
+        background:#770606;
+      }
+      .director{
+
+        border-radius: 10px;
+        margin: 23px;
+        height: 50vh;
+        background: rgb(255, 255, 255);
+        border: 1px solid rgba(128, 128, 128, 0.651);
+        width: 27%;
+      }
+      .circle{
+        height: 25vh;
+        border-radius: 60%;
+        margin: 23px auto;
+        width: 50%;
+        border: 1px solid rgba(128, 128, 128, 0.651);
+        background-image: url("images/image.png");
+        background-size: cover;
+      }
+      .msg{
+        width: 90%;
+        margin: 20px;
+      }
+      .msg-title{
+        margin: auto 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .last-container{
+        height: 70vh;
+        width: 100%;
+        background-image: url("images/Untitled-2.png");
+        
+      }
+      .square-img1{
+        height: 30vh;
+        width: 96%;
+        background-image: url('/images/d1.jpg');
+        margin: 10px auto 10px auto;
+      }
+      .square-img2{
+        height: 30vh;
+        width: 96%;
+        background-image: url('/images/d2.jpg');
+        background-size: cover;
+        margin: 10px auto 10px auto;
+      }
+      .square-img3{
+        height: 30vh;
+        width: 96%;
+        background-image: url('/images/d3.jpg');
+        margin: 10px auto 10px auto;
+      }
+      .centerr{
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        margin-top: 23px;
+      }
+      .last-content{
+        display: flex;
+        justify-content: space-evenly;
+      }
+.title-last{
+  padding-top: 20px;
+}
+.director2:hover{
+        height: 51vh;
+        background: rgb(255, 255, 255);
+        border: 1px solid rgba(128, 128, 128, 0.651);
+        width: 28%;
+        transition: all 0.4s ease-in-out;
+}
+
+
+.events{
+  height: 90vh;
+  margin-bottom: 20px;
+  background-image: url("/images/fair.jpg");
+  background-size: cover;
+}
+.long1{
+  border-radius: 10px;
+        margin: 23px;
+        height: 70vh;
+        background-image: url("/images/ongoing2.jpg");
+        background-size: cover;
+position: left;
+        border: 1px solid rgba(128, 128, 128, 0.651);
+        width: 27%;
+}
+.long2{
+  border-radius: 10px;
+        margin: 23px;
+        height: 70vh;
+        background-image: url("/images/ongoing1.jpg");
+background-size: cover;
+position: left;
+        border: 1px solid rgba(128, 128, 128, 0.651);
+        width: 27%;
+}
+.long3{
+  border-radius: 10px;
+        margin: 23px;
+        height: 70vh;
+        border: 1px solid rgba(128, 128, 128, 0.651);
+        background-image: url("/images/ongoing2.jpg");
+        width: 27%;
+        background-size: cover;
+position: left;
+}
+.long-card{
+  display: flex;
+justify-content: space-evenly;
+}
+
+
+    canvas {
+      display: block;
+    }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="topbar"><span class="locate" ><img class="locate-t" src="/images/placeholder.png" height="20px" width="20px" alt=""><p class="lct">At Baluchaha Road Padrauna , Kushinagar (274304)</p></span>
+        <div class="info">
+            <a href="#" class="info-custom2">Hey </a>
+            <a href="/register"class="info-custom" >Sign up</a>
+            <a href="/login"class="info-custom" >Login</a>
+
+        </div>
+
+    </div>
+    <nav class="navbar">
+
+        <ul class="logo"><img src="/images/images (1).jfif" alt="" height="65px" width="65px" class="logoimg">
+            <li class="l-top">JDS INTERNATIONAL SCHOOL</li>
+        </ul>
+        <ul class="nav-links">
+          <li><a href="/index">Home</a></li>
+          <li><a href="/faculty">Faculty</a></li>
+          <li><a href="/admission">Admission</a></li>
+          <li><a href="/contact">Contact us</a></li>
+          <li><a href="/about" class="action">About us</a></li>
+        </ul>
+    </nav>
+
+ 
+ 
+
+
+
+    <div class="slider">
+      <img
+        id="img-1"
+        src="/images/End-of-Year-Slider-V2-2023.jpg"
+        alt="Image 1"
+      />
+      <img
+        id="img-2"
+        src="/images/slide-help.png"
+        alt="Image 2"
+      />
+      <img
+        id="img-3"
+        src="/images/AASC-Closer-Look-Web-Slidercopy.png"
+        alt="Image 3"
+      />
+    </div>
+    <div class="navigation-button">
+      <span class="dot active" onclick="changeSlide(0)"></span>
+      <span class="dot" onclick="changeSlide(1)"></span>
+      <span class="dot" onclick="changeSlide(2)"></span>
+    </div>
+
+    <div>
+        </div>
+   
+
+
+
+<div class="container-about">
+  <div class="text-jds">About JDS</div>
+  <div class="cont">
+  <div class="about-jds">
+    Today, I stand before you to celebrate the profound impact that education and schools have on our lives. Education is not merely a process of acquiring knowledge; it is a transformative journey that shapes individuals, communities, and societies.
+
+Our school, [JDS INTERNATIONAL SCHOOL], is not just a place of learning; it is a sanctuary of growth and development. Within these walls, students embark on a journey of self-discovery, honing their skills, and forging lifelong connections. The teachers here are not just educators; they are mentors, guiding lights, and architects of future success.
+
+Schools play a pivotal role in nurturing not only academic excellence but also in instilling values, fostering creativity, and building character. The lessons learned within these hallowed halls extend far beyond textbooks and exams. They encompass resilience, teamwork, and the ability to face challenges head-on.
+
+Education is the cornerstone of progress and the key to unlocking one's full potential. It empowers individuals to dream, innovate, and contribute meaningfully to society. As we witness the achievements of our students, we see the tangible results of the dedication and commitment put forth by both educators and learners.
+
+Let us not forget the invaluable support of parents and the community. Their involvement and encouragement create a collaborative environment that enhances the overall educational experience.
+
+In conclusion, [School Name] is not just a school; it is a cradle of aspirations, a fountain of knowledge, and a beacon of inspiration. Together, let us continue to foster an environment where learning knows no bounds, where curiosity is celebrated, and where every individual has the opportunity to shine.
+
+Thank you, and may the pursuit of knowledge continue to illuminate our path towards a brighter future.
+<div class="about-image">
+  <img src="images/images__1_-removebg-preview.png" alt="" class="abt">
+</div>
+
+  </div> 
+  
+</div>
+<div class="read">
+  <a href="#" class="read-more">Read more..</a>
+</div>
+
+</div>
+
+<div class="messages">
+  <div class="director">
+    <div class="circle"></div>
+    <div class="msg-title">Director's messages</div>
+    <div class="msg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quisquam, soluta expedita fugit repellendus labore, magni nisi alias est placeat possimus corrupti? 
+    </div>
+  </div>
+</div> <br>
+
+
+<div class="messages bg-1">
+  <div class="director">
+    <div class="circle"></div>
+    <div class="msg-title">Principal's messages</div>
+    <div class="msg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quisquam, soluta expedita fugit repellendus labore, magni nisi alias est placeat possimus corrupti? 
+    </div>
+  </div>
+</div> <br>
+
+<div class="messages bg-2">
+  <div class="director">
+    <div class="circle"></div>
+    <div class="msg-title">Vice Principal's messages</div>
+    <div class="msg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quisquam, soluta expedita fugit repellendus labore, magni nisi alias est placeat possimus corrupti? 
+    </div>
+  </div>
+</div> <br>
+
+
+
+
+<div class="last-container">
+
+  <h1 class="title-last centerr">Gallary Images - </h1>
+<div class="last-content">
+  <div class="director director2">
+    <div class="square-img1"></div>
+    <div class="msg-title">Trip To Ayodhya - </div>
+    <div class="msg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quisquam, soluta expedita fugit repellendus labore, magni nisi alias est placeat possimus corrupti? 
+    
+  </div>
+</div>
+
+<div class="director director2">
+    <div class="square-img2"></div>
+
+    <div class="msg-title">Silver Zone -- JDS</div>
+    <div class="msg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quisquam, soluta expedita fugit repellendus labore, magni nisi alias est placeat possimus corrupti? 
+    
+  </div>
+</div>
+
+<div class="director director2">
+    <div class="square-img3"></div>
+
+    <div class="msg-title">Educational Trip 2023</div>
+    <div class="msg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum quisquam, soluta expedita fugit repellendus labore, magni nisi alias est placeat possimus corrupti? 
+    
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="events">
+
+  <h1 class="title-last centerr">Ongoing Events - </h1>
+<div class="long-card">
+<div class="long1"></div>
+<div class="long2"></div>
+<div class="long3"></div>
+</div>
+</div>
+
+
+
+
+
+    <footer class="container2">
+        <div class="container-content">
+            <div class="left-side">
+                <a href="#" class="left-side-items">Home</a>
+                <a href="#" class="left-side-items">Products</a>
+                <a href="#" class="left-side-items">Marketplace</a>
+                <a href="#" class="left-side-items">Blog</a>
+                <a href="#" class="left-side-items">Community</a>
+                <a href="#" class="left-side-items">Faculty</a>
+                <a href="#" class="left-side-items">About us</a>
+                
+                <p class="left-side-items box">Toll free - 19121</p>
+           
+                <p class="left-side-items box-1">Email - jdsinternationalschool@gmail.com</p>
+            </div>
+           
+            
+        </div>
+        <div class="footer-text">&copy; www.JDS.com - All Right Reserved</div>
+        <div class="footer-add">
+            At Baluchaha Road , Padrauna ( Kushinagar ) , 274304 Uttar Pradesh .  
+        </div>
+    </footer>
+
+    <script>
+
+       var currentImg = 0;
+  var imgs = document.querySelectorAll('.slider img');
+  let dots = document.querySelectorAll('.dot');
+  var interval = 3000;
+
+  // Second banner
+  var secondEventTitle = 'Hi! *Freshmen* Orientation Day';
+
+  // Third banner
+  var thirdEventDate = new Date('2023-02-01'); // pull this from database
+  var thirdEventDateString = thirdEventDate.toLocaleDateString('en-us', { year: 'numeric', month: 'short', day: 'numeric' });
+  var days = calculateDays(new Date(), thirdEventDate) || 0;
+  const countdownText = days > 0 ? `${days} days left` : 'Live Now!';
+
+  var secondImageUrl = `/images/slide-help.png`;
+  var thirdImageUrl = `/images/AASC-Closer-Look-Web-Slidercopy.png`;
+
+  document.getElementById('img-2').src = secondImageUrl;
+  document.getElementById('img-3').src = thirdImageUrl;
+
+  var timer = setInterval(changeSlide, interval);
+
+  function changeSlide(n) {
+    for (var i = 0; i < imgs.length; i++) {
+      imgs[i].style.opacity = 0;
+      dots[i].className = dots[i].className.replace(' active', '');
+    }
+
+    currentImg = (currentImg + 1) % imgs.length;
+
+    if (n != undefined) {
+      clearInterval(timer);
+      timer = setInterval(changeSlide, interval);
+      currentImg = n;
+    }
+
+    imgs[currentImg].style.opacity = 1;
+    dots[currentImg].className += ' active';
+  }
+
+  function calculateDays(today, eventDate) {
+    const difference = eventDate.getTime() - today.getTime();
+
+    return Math.ceil(difference / (1000 * 3600 * 24)); // convert to days
+  }
+
+
+        
+        
+        
+        
+       
+  </script>
+</body>
+
+</html>
